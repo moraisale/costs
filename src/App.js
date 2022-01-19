@@ -9,6 +9,7 @@ import NewProject from './pages/NewProject';
 function App() {
   return (
     <div className="App">
+      <h1>Teste para o Commit</h1>
       <Router>
         <ul>
           <li>Home</li>
