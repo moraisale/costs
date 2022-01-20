@@ -5,23 +5,23 @@ import Contact from './pages/Contact';
 import Home from './pages/Home';
 import NewProject from './pages/NewProject';
 import Container from './components/layout/Container'
+import Navbar from './components/layout/Navbar'
+import Footer from './components/layout/Footer'
+import Projects from './pages/Projects';
 
 function App() {
   return (
-    <div className="App">
-      <Router>
-        <ul>
-          <li> <Link to="/">Home</Link> </li>
-          <li><Link to="/company">Company</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
-          <li><Link to="/newproject">New Project</Link></li>
-        </ul>
+      <Router >
+        <Navbar/>
         <Switch>
           <Container customClass="min-height">
             <Route exact path="/">
-               <Home/>
+              <Home/>
             </Route>
-             <Route exact path="/company">
+            <Route exact path="/projects">
+              <Projects/>
+            </Route>
+            <Route exact path="/company">
               <Company/>
             </Route>
             <Route exact path="/contact">
@@ -31,12 +31,10 @@ function App() {
               <NewProject/>
             </Route>
           </Container>
-        
-      </Switch>
-      <p>Footer</p>
+        </Switch>
+        <Footer/>
       </Router>
       
-    </div>
   );
 }
 
