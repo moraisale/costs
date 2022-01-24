@@ -1,0 +1,7 @@
+.newproject_container {
+  margin: 2em auto;
+  display: flex;
+  flex-direction: column;
+  padding: 3em;
+  width: 450px;
+}

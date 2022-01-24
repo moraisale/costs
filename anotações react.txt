@@ -1,0 +1,5 @@
+--------- JSON.SERVER ----------
+
+criar arquivo de db.json
+adicionar script no package.json "backend": "json.server --watch db.json --port 5000"
+executar npm run backend
