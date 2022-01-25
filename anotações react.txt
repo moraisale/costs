@@ -3,3 +3,28 @@
 criar arquivo de db.json
 adicionar script no package.json "backend": "json.server --watch db.json --port 5000"
 executar npm run backend
+
+---------- fetch API -----------
+
+fetch('url')
+.then(proximo passo a ser feito quando acessar a url, normalmente converter para json)
+.then(setar ou imprimir os dados)
+
+fetch('http://urlteste.com', {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',       indica qual tipo de dado a resposta espera
+      },
+    })
+      .then((resposta) => resposta.json())
+      .then((data) => {
+        console.log(data)
+      })
+
+--------- useEffect ----------
+
+useEffect ( () => {
+	código a ser executado
+}, [quando o código deve ser executado];
+
+no array deve ser passada a variável que quando alterada, o useEffect precisa executar novamente.

@@ -1,5 +1,4 @@
 .newproject_container {
-<<<<<<< HEAD
   width: 450px;
   margin: 0 auto;
   padding: 3em;
@@ -11,11 +10,4 @@
 
 .newproject_container p {
   color: #7b7b7b;
-=======
-  margin: 2em auto;
-  display: flex;
-  flex-direction: column;
-  padding: 3em;
-  width: 450px;
->>>>>>> c994a63cb441ef3d8e9c969c24f007145ebfa5ad
 }
