@@ -1,3 +1,82 @@
+-----------  Estrutura componente  -----------------
+
+	function Componente (props) {
+		return (
+			<div>
+				x
+			<div/>
+		)
+	}
+
+	export default Component
+
+- pasta public abriga o index.html que possui a div 'root'
+
+- componente 'index.js' é responsável por renderizar o componente pai 'app.js' para o index.html
+
+- componente 'app.js' é o pai que recebe todos outros
+
+--------- Estruturação do projeto -------------
+
+components
+	layout
+		navbar
+		footer
+		botões de link
+		container para abrigar varios components no app.js
+	pages
+		home
+		empresa
+		contato
+		etc
+	form
+		Inputs
+		Selects
+		Botoes de submit
+
+img
+	logo
+	icon 'react-icons'
+
+
+
+--------------- JSX ------------
+
+encapsula HTML e JS 
+{} - para usar lógica do js dentro do jsx
+
+-------------- PROPS ------------
+
+- number tem que ser passado entre {} idade={23}
+
+- import PropTypes from '.props-types'   (pacote)
+Componente.propTypes = {}    	(propriedade do componente	
+
+- métodos podem ser passados por props (sempre que a função receber o método, o método tem que ser declarado na chamada do componente)
+
+- function Nome ({desestruturação das props})
+
+
+------------ CSS -----------
+
+- criar arquivo para cada componente Componente.module.css
+- funciona semelhante as props (encapsula as propriedades do objeto)
+- className={styles.propriedade}
+- import styles from './Componente.module.css'
+
+
+----------------- useState  -------------------
+
+const [name, setName] = useState()     (variavel a ser lida e variavel a ser alterada)
+
+--------------  react-router-dom  -------------
+
+<Link to="/endereço"> texto <Link/>
+
+no app.js abrir o componente <Router> e dentro do <Switch> inserir o <Route path="/endereço"> e o componente a ser renderizado
+
+
+
 --------- JSON.SERVER ----------
 
 criar arquivo de db.json
