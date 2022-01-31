@@ -1,15 +1,8 @@
 {
   "projects": [
     {
-      "category": {
-        "id": "option.id",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 1
-    },
-    {
+      "name": "Mais Teste",
+      "budget": "40",
       "category": {
         "id": "option.id",
         "name": "Infra"
